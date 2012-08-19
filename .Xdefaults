@@ -1,0 +1,4 @@
+URxvt*transparent: true
+URxvt*shading: 10
+URxvt*scrollBar: false
+URxvt*font: xft:Inconsolata:pixelsize=15:antialias=true:hinting=true
