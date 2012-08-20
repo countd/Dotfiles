@@ -1,0 +1,21 @@
+[general]
+ui = ttyui
+accounts = GMail
+
+[Account GMail]
+localrepository = Gmail-Local
+remoterepository = Gmail-Remote
+
+[Repository Gmail-Local]
+type = Maildir
+localfolders = ~/mail/GMail
+
+[Repository Gmail-Remote]
+type = Gmail
+remoteuser = yourmail@gmail.com
+remotepass = yourpass 
+realdelete = no
+
+nametrans = lambda folder: re.sub('^inbox$', 'INBOX',
+		  	   re.sub(' +', '_',
+			   re.sub(r'.*/(.*)$', r'\1', folder).lower()))

@@ -1,3 +1,6 @@
 *~
 xmonad-i386-linux
 *.swp
+.mutt/temp/*
+.mutt/cache/headers/*
+.mutt/cache/bodies/*
