@@ -1,0 +1,4 @@
+# ignoring the after-build stuff
+*.hi
+*.o
+*.errors
