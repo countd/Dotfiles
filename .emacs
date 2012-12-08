@@ -59,22 +59,22 @@
 (blink-cursor-mode 0)
 
 ;; Adding some vi-like features with Evil
-(push "~/.emacs.d/evil/" load-path)
-(require 'evil)
-(evil-mode 1)
+;(push "~/.emacs.d/evil/" load-path)
+;(require 'evil)
+;(evil-mode 1)
 
 ;; Remap org-mode meta keys for convenience
- (mapcar (lambda (state)
-	   (evil-declare-key state org-mode-map
-			     (kbd "M-l") 'org-metaright
-			     (kbd "M-h") 'org-metaleft
-			     (kbd "M-k") 'org-metaup
-                             (kbd "M-j") 'org-metadown
-			     (kbd "M-L") 'org-shiftmetaright
-			     (kbd "M-H") 'org-shiftmetaleft
-			     (kbd "M-K") 'org-shiftmetaup
-			     (kbd "M-J") 'org-shiftmetadown))
-	 '(normal insert))
+; (mapcar (lambda (state)
+;	   (evil-declare-key state org-mode-map
+;			     (kbd "M-l") 'org-metaright
+;			     (kbd "M-h") 'org-metaleft
+;			     (kbd "M-k") 'org-metaup
+;                            (kbd "M-j") 'org-metadown
+;			     (kbd "M-L") 'org-shiftmetaright
+;			     (kbd "M-H") 'org-shiftmetaleft
+;			     (kbd "M-K") 'org-shiftmetaup
+;			     (kbd "M-J") 'org-shiftmetadown))
+;	 '(normal insert))
 
 (load "~/.emacs.d/haskell-mode/haskell-site-file")
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
@@ -90,3 +90,4 @@
 (autoload 'sml-mode "sml-mode" "Major mode for editing SML." t)
 (autoload 'run-sml "sml-proc" "Run an inferior SML process." t)
 (add-to-list 'auto-mode-alist '("\\.\\(sml\\|sig\\)\\'" . sml-mode))
+
