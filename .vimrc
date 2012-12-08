@@ -37,6 +37,13 @@ set t_Co=256
 set autoindent
 set gfn=Inconsolata\ 12
 
+" Spaces instead of tabs
+set expandtab
+set tabstop=4
+set shiftwidth=4
+" Turning off expandtab for Makefiles
+autocmd FileType make setlocal noexpandtab
+
 " Some tricks for mutt
 " F1 through F3 re-wraps paragraphs in useful ways
 augroup MUTT
