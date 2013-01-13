@@ -14,3 +14,4 @@ In addition, the following needs to be done:
 * Create `~/mail/` direcotry to hold emails.
 * Create `.mutt/temp` `.mutt/cache/headers` and `.mutt/cache/bodies`
 * The current `.zshfiles/local.sh` assumes `TeX Live` lives in `/usr/local/texlive/2012/bin/i386-linux`
+* If you want spellcheck to work in Irssi, you'll need the `Text::Aspell` perl module, which can be installed with `sudo perl -MCPAN -e 'install Text::Aspell'`
